@@ -1,0 +1,14 @@
+<h1>Mon blog</h1>
+</div>
+<div class="container">
+<div class="row">
+<% @articles.each do |article| %>
+<div class="col-12">
+<div class="shadow bg-white rounded p-4 d-flex justify-content-between">
+<h2><%= article.title %> - <%= "⭐" * article.stars %></h2>
+<p><b><%= article.created_at.strftime("%D") %></b></p>
+</div>
+</div>
+<% end %>
+</div>
+</div>

@@ -1,0 +1,6 @@
+<div class="container shadow bg-white rounded p-4 text-center my-5 mb-4">
+<h1><%= @article.title %></h1>
+<p><%= "⭐" * @article.stars %></p>
+<h2><%= @article.created_at.strftime("%d %b %Y") %></h2>
+<p><%= @article.content %></p>
+</div>
