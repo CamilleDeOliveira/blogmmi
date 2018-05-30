@@ -13,13 +13,6 @@ Rails.application.routes.draw do
 
   get 'articles/destroy'
 
-	get 'articles/index'
-	get 'articles/show'
-	get 'articles/new'
-	get 'articles/create'
-	get 'articles/edit'
-	get 'articles/update'
-	get 'article/destroy'
   	devise_for :users
   	root to: 'pages#home'
   	resources :articles
